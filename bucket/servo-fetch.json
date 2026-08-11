@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://github.com/konippi/servo-fetch/releases/download/v0.14.0/servo-fetch-v0.14.0-x86_64-pc-windows-msvc.zip",
             "hash": "90d039d05c99abaf9f0f313e4267f85dbadf8e7a09bf2e91f95baf1b09c494bd",
-            "extract_dir": "sing-box-0.14.0-windows-amd64"
+            "extract_dir": "servo-fetch-v0.14.0-x86_64-pc-windows-msvc"
         }
     },
     "bin": "servo-fetch.exe",
@@ -18,7 +18,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/konippi/servo-fetch/releases/download/v$version/servo-fetch-v$version-x86_64-pc-windows-msvc.zip",
-                "extract_dir": "sing-box-$version-windows-amd64"
+                "extract_dir": "servo-fetch-v$version-x86_64-pc-windows-msvc"
             }
         }
     }
