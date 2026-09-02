@@ -1,0 +1,29 @@
+{
+    "version": "0.61.2",
+    "homepage": "https://github.com/moonrepo/proto",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/moonrepo/proto/releases/download/v0.61.2/proto_cli-x86_64-pc-windows-msvc.zip",
+            "hash": "5cff0850537e8bd81aaa735014deda17a35cef60d0aaefb32cd70ec7267c05f4"
+        }
+    },
+    "bin": [
+        "proto.exe",
+        "proto-shim.exe"
+    ],
+    "env_set": {
+        "PROTO_HOME": "$dir/store"
+    },
+    "persist": "store",
+    "checkver": {
+        "github": "https://github.com/moonrepo/proto"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/moonrepo/proto/releases/download/v$version/proto_cli-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
