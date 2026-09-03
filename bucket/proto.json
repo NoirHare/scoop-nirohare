@@ -12,7 +12,7 @@
         "proto.exe",
         "proto-shim.exe"
     ],
-    "env_add_path": ["$dir/store/shims"],
+    "env_add_path": ["store/shims", "store/bin"],
     "env_set": {
         "PROTO_HOME": "$dir/store"
     },
