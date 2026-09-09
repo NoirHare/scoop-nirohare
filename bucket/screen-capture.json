@@ -1,0 +1,28 @@
+{
+    "version": "2.5.15",
+    "homepage": "https://github.com/xland/ScreenCapture",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/xland/ScreenCapture/releases/download/2.5.15/ScreenCapture.exe",
+            "hash": "a080e7161d885d3bdec53c3388490cbdf23cb5f9a0b77e5963e47248258cd12d"
+        }
+    },
+    "bin": "ScreenCapture.exe",
+    "persist": ["config.json", "Lang"],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\config.json\")) { New-Item -Path \"$persist_dir\\config.json\" -ItemType File | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\Lang\")) { New-Item -Path \"$persist_dir\\Lang\" -ItemType Directory | Out-Null }"
+    ],
+    "checkver": {
+        "github": "https://github.com/xland/ScreenCapture"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/xland/ScreenCapture/releases/download/$version/ScreenCapture.exe"
+            }
+        }
+    }
+}
