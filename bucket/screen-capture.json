@@ -9,7 +9,12 @@
         }
     },
     "bin": "ScreenCapture.exe",
-    "shortcuts": ["ScreenCapture.exe"],
+    "shortcuts": [
+        [
+            "ScreenCapture.exe",
+            "ScreenCapture"
+        ]
+    ],
     "persist": ["config.json", "Lang"],
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
