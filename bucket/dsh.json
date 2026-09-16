@@ -9,6 +9,9 @@
         }
     },
     "bin": "dsh.bat",
+    "env_set": {
+        "DSH_HOME": "$dir/home"
+    },
     "persist": ["home"],
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
