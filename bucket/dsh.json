@@ -5,11 +5,14 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.1.5-rc.1/dsh-windows-x64.zip",
-            "hash": "4074ff68d55aacf1101c5aaf8f8c9af91b03ae0871be3b75b06ebacec63edb81"
+            "hash": "afbc5dbd1e8d2d8188dcb31c798de7bdfeba9c5e2d37802b5e2a94b5c4265491"
         }
     },
     "bin": "dsh.bat",
     "persist": ["home"],
+    "env_set": {
+        "DSH_HOME": "$dir/home"
+    },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\home\")) { New-Item -Path \"$persist_dir\\home\" -ItemType Directory | Out-Null }"
