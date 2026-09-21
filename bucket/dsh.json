@@ -18,12 +18,13 @@
         "if (!(Test-Path \"$persist_dir\\home\")) { New-Item -Path \"$persist_dir\\home\" -ItemType Directory | Out-Null }"
     ],
     "checkver": {
-        "github": "https://github.com/NoirHare/dsh-zip-builder"
+        "url": "https://api.github.com/repos/NoirHare/dsh-zip-builder/releases",
+        "regex": "\"tag_name\":\\s*\"v([^\"]+)\""
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/$version/dsh-windows-x64.zip"
+                "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v$version/dsh-windows-x64.zip"
             }
         }
     }
