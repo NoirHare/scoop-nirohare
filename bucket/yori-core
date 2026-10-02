@@ -1,0 +1,39 @@
+{
+    "version": "2.70",
+    "description": "CMD replacement shell that supports backquotes, job control, improves tab completion, file matching, aliases, command history, and more.",
+    "homepage": "http://www.malsmith.net/yori/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.malsmith.net/download/?obj=yori/2.70/yori-core-amd64.cab#/core.7z",
+            "hash": "f107096ce5bfc85311ed7da88476654c81af87c9774a07c376dc572c01897a7b"
+        },
+        "32bit": {
+            "url": "http://www.malsmith.net/download/?obj=yori/2.70/yori-core-win32.cab#/core.7z",
+            "hash": "e69a1d19c2bd77d706a7e8c35370bfecb75d1a6e44c5f999122208d09c1f65b5"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\pkginfo.ini\" -Force",
+    "bin": "yori.exe",
+    "persist": "YoriInit.d",
+    "shortcuts": [
+        [
+            "yori.exe",
+            "Yori"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.malsmith.net/yori/changelog/",
+        "regex": "<P>([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.malsmith.net/download/?obj=yori/$version/yori-core-amd64.cab#/core.7z"
+            },
+            "32bit": {
+                "url": "http://www.malsmith.net/download/?obj=yori/$version/yori-core-win32.cab#/core.7z"
+            }
+        }
+    }
+}
