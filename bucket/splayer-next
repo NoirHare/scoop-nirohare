@@ -1,0 +1,29 @@
+{
+    "version": "1.1.0",
+    "homepage": "https://github.com/SPlayer-Dev/SPlayer-Next",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v1.1.0/SPlayer-Next-1.1.0-x64-portable.exe",
+            "hash": "3be0a641879486b686088e8116b6b31107327e866817d7dfdcd189c2711d80b2",
+        }
+    },
+    "shortcuts": [
+        [
+            "SPlayer-Next.exe",
+            "SPlayer-Next"
+        ]
+    ],
+    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+    "checkver": {
+        "github": "https://github.com/SPlayer-Dev/SPlayer-Next"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v$version/SPlayer-Next-$version-x64-portable.exe"
+            }
+        }
+    }
+}
