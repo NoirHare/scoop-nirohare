@@ -1,7 +1,7 @@
 {
     "version": "1.1.0",
     "homepage": "https://github.com/SPlayer-Dev/SPlayer-Next",
-    "license": "MIT",
+    "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v1.1.0/SPlayer-Next-1.1.0-x64-portable.exe",
