@@ -5,7 +5,7 @@
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v1.1.0/SPlayer-Next-1.1.0-x64-portable.exe",
+            "url": "https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v1.1.0/SPlayer-Next-1.1.0-x64-portable.exe#/dl.7z",
             "hash": "3be0a641879486b686088e8116b6b31107327e866817d7dfdcd189c2711d80b2"
         }
     },
