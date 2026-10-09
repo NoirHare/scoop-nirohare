@@ -1,11 +1,12 @@
 {
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/scoop/refs/heads/master/schema.json",
     "version": "1.1.0",
     "homepage": "https://github.com/SPlayer-Dev/SPlayer-Next",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://github.com/SPlayer-Dev/SPlayer-Next/releases/download/v1.1.0/SPlayer-Next-1.1.0-x64-portable.exe",
-            "hash": "3be0a641879486b686088e8116b6b31107327e866817d7dfdcd189c2711d80b2",
+            "hash": "3be0a641879486b686088e8116b6b31107327e866817d7dfdcd189c2711d80b2"
         }
     },
     "shortcuts": [
