@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0-rc.2",
+    "homepage": "https://github.com/NoirHare/dsh-zip-builder",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.1-rc.2/dsh-v0.2.1-rc.2-win-x64.zip",
+            "hash": "945eeea7bf6a1af50197239ad0bc10cee886efbd8f65cfb97d13f91bec04b655"
+        }
+    },
+    "bin": [["dsh.bat", "dsh-next"]],
+    "persist": "home",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\home\")) { New-Item -Path \"$persist_dir\\home\" -ItemType Directory | Out-Null }"
+    ],
+    "checkver": {
+        "url": "https://registry.npmjs.org/-/package/@deepseek-ai/dsh/dist-tags",
+        "jsonpath": "$.next"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v$version/dsh-v$version-windows-x64.zip"
+            }
+        }
+    }
+}
