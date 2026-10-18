@@ -5,7 +5,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.0-rc.2/dsh-v0.2.0-rc.2-win-x64.zip",
-            "hash": "b18b6f142587784eb22f5b0e0c4ed3cc851e36fa7642f133c58424f959b99b36"
+            "hash": "5fc54d2a3d6829e64fb9a6ce0ee4e0412290fdd38e03daf428bfb25d1413e65b"
         }
     },
     "bin": "dsh.bat",
