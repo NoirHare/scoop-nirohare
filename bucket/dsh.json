@@ -4,8 +4,8 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.0-rc.2/dsh-windows-x64.zip",
-            "hash": "6e98a87c60a68828c2ab3c3f94e692f53985e678badaf48819839bfbc6936c0b"
+            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.0-rc.2/dsh-0.2.0-rc.2-win-x64.zip",
+            "hash": "11bffdf7c480042a04152a41832eb7d092a7fd7d0a52af6c706a33ac2041117b"
         }
     },
     "bin": "dsh.bat",
@@ -24,7 +24,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v$version/dsh-windows-x64.zip"
+                "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v$version/dsh-$version-windows-x64.zip"
             }
         }
     }
