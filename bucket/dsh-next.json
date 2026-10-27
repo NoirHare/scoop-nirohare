@@ -1,14 +1,19 @@
 {
-    "version": "0.2.1-rc.2",
+    "version": "0.2.1-rc.4",
     "homepage": "https://github.com/NoirHare/dsh-zip-builder",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.1-rc.2/dsh-v0.2.1-rc.2-win-x64.zip",
-            "hash": "1ccb26a7744fef52778fc71575e10eeab4e7cc83376c4532ecc7b54248d30783"
+            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.1-rc.4/dsh-v0.2.1-rc.4-windows-x64.zip",
+            "hash": "6378b7a3d0cebc21e9d781aef09c1d6fa3326702eed35488bff115f2e61fe2cb"
         }
     },
-    "bin": [["dsh.bat", "dsh-next"]],
+    "bin": [
+        [
+            "dsh.bat",
+            "dsh-next"
+        ]
+    ],
     "persist": "home",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
