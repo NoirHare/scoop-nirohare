@@ -1,11 +1,11 @@
 {
-    "version": "0.2.1-rc.2",
+    "version": "0.2.1-rc.5",
     "homepage": "https://github.com/NoirHare/dsh-zip-builder",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.1-rc.2/dsh-v0.2.1-rc.2-windows-x64.zip",
-            "hash": "7e01c455a152a82c0e99ee54b72b4e343fa79776de0c3ec212430c4adbd0699a"
+            "url": "https://github.com/NoirHare/dsh-zip-builder/releases/download/v0.2.1-rc.5/dsh-v0.2.1-rc.5-windows-x64.zip",
+            "hash": "5a57186711b05d094cc219cffde99201c7b8130fa505e2dbee64746514ac6048"
         }
     },
     "bin": "dsh.bat",
